@@ -66,3 +66,15 @@ init(owner: Address, content: Cell, max_supply: Int) {
     self.content = content;
     self.max_supply = max_supply;
 }
+```
+
+### Example Minting Function
+
+```tact
+receive(msg: Mint) {
+    let ctx: Context = context();
+    require(ctx.sender == self.owner, "Not Owner");
+    require(self.mintable, "Can't Mint Anymore");
+    self.mint(msg.receiver, msg.amount, self.owner);
+}
+```
