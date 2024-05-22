@@ -38,13 +38,18 @@ Before deploying the contract, you can update the following attributes in the de
     npm install
     ```
 
-4. **Customize the Deploy Script**:
+4. **Build the Contract**:
+    ```bash
+    npx blueprint build
+    ```
+
+5. **Customize the Deploy Script**:
     - Open the `deploy.js` file.
     - Update the `name`, `description`, `symbol`, and `image` variables with your desired values.
 
-5. **Deploy the Contract**:
+6. **Deploy the Contract**:
     ```bash
-    npm run deploy
+    npx blueprint run
     ```
 
 ## Contract Overview
