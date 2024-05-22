@@ -1,26 +1,68 @@
-# SampleJetton
+# Sample Ton Jetton Contract
 
-## Project structure
+This repository contains a blueprint project for creating and deploying a Jetton contract on the TON blockchain. The project includes the smart contract written in the Tact language and a deploy script that allows users to customize their Jetton token's attributes, such as name, description, symbol, and image.
 
--   `contracts` - source code of all the smart contracts of the project and their dependencies.
--   `wrappers` - wrapper classes (implementing `Contract` from ton-core) for the contracts, including any [de]serialization primitives and compilation functions.
--   `tests` - tests for the contracts.
--   `scripts` - scripts used by the project, mainly the deployment scripts.
+## Features
 
-## How to use
+- **Ton Jetton Smart Contract**: Written in Tact language, the contract includes features such as minting, burning, and transferring tokens.
+- **Deploy Script**: Easily customizable script to deploy your Jetton contract with personalized attributes.
+- **Maximum Supply Control**: Ensure the total supply of tokens cannot exceed a specified limit.
+- **Mintable Flag**: Control whether new tokens can be minted after deployment.
+- **Owner Permissions**: Only the owner can mint new tokens and update certain contract parameters.
 
-### Build
+## Customizable Attributes
 
-`npx blueprint build` or `yarn blueprint build`
+Before deploying the contract, you can update the following attributes in the deploy script:
 
-### Test
+- **Name**: The name of your Jetton token.
+- **Description**: A brief description of your Jetton token.
+- **Symbol**: The symbol representing your Jetton token.
+- **Image**: A URL or IPFS link to an image representing your Jetton token.
 
-`npx blueprint test` or `yarn blueprint test`
+## How to Use
 
-### Deploy or run another script
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/yourusername/sample-ton-jetton-contract.git
+    ```
 
-`npx blueprint run` or `yarn blueprint run`
+2. **Navigate to the Project Directory**:
+    ```bash
+    cd sample-ton-jetton-contract
+    ```
 
-### Add a new contract
+3. **Install Dependencies** (if any):
+    ```bash
+    npm install
+    ```
 
-`npx blueprint create ContractName` or `yarn blueprint create ContractName`
+4. **Customize the Deploy Script**:
+    - Open the `deploy.js` file.
+    - Update the `name`, `description`, `symbol`, and `image` variables with your desired values.
+
+5. **Deploy the Contract**:
+    ```bash
+    npm run deploy
+    ```
+
+## Contract Overview
+
+### Ton Jetton Contract
+
+The Ton Jetton contract is based on the TEP-74 standard and includes the following features:
+
+- **Minting**: Allows the owner to mint new tokens up to the maximum supply.
+- **Burning**: Enables token holders to burn their tokens, reducing the total supply.
+- **Transferring**: Supports transferring tokens between addresses.
+- **Metadata**: Stores metadata such as name, description, symbol, and image URL.
+
+### Example Initialization
+
+```tact
+init(owner: Address, content: Cell, max_supply: Int) {
+    self.totalSupply = 0;
+    self.owner = owner;
+    self.mintable = true;
+    self.content = content;
+    self.max_supply = max_supply;
+}
