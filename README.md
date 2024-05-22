@@ -23,7 +23,7 @@ Before deploying the contract, you can update the following attributes in the de
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/sample-ton-jetton-contract.git
+    git clone https://github.com/nikandr-surkov/Sample-Ton-Jetton-Contract.git
     ```
 
 2. **Navigate to the Project Directory**:
@@ -78,3 +78,7 @@ receive(msg: Mint) {
     self.mint(msg.receiver, msg.amount, self.owner);
 }
 ```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
