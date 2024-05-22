@@ -33,7 +33,7 @@ Before deploying the contract, you can update the following attributes in the de
     cd sample-ton-jetton-contract
     ```
 
-3. **Install Dependencies** (if any):
+3. **Install Dependencies**:
     ```bash
     npm install
     ```
