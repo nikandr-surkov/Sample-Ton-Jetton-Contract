@@ -2,6 +2,8 @@
 
 This repository contains a blueprint project for creating and deploying a Jetton contract on the TON blockchain. The project includes the smart contract written in the Tact language and a deploy script that allows users to customize their Jetton token's attributes, such as name, description, symbol, and image.
 
+Check my Youtube [Nikandr Surkov](https://www.youtube.com/@NikandrSurkov) for more tutorials and guides.
+
 ## Features
 
 - **Ton Jetton Smart Contract**: Written in Tact language, the contract includes features such as minting, burning, and transferring tokens.
