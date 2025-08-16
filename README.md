@@ -1,5 +1,14 @@
 # Sample Ton Jetton Contract
 
+<div align="center">
+  <img src="https://nikandr.com/og-image.jpg" alt="Nikandr - Premium Telegram Development Resources" width="600"/>
+  
+  🚀 **Looking to master Telegram Mini App development?**  
+  Visit [nikandr.com](https://nikandr.com) for the best premium content and courses for Telegram developers.
+</div>
+
+---
+
 This repository contains a blueprint project for creating and deploying a Jetton contract on the TON blockchain. The project includes the smart contract written in the Tact language and a deploy script that allows users to customize their Jetton token's attributes, such as name, description, symbol, and image.
 
 Check my Youtube [Nikandr Surkov](https://www.youtube.com/@NikandrSurkov) for more tutorials and guides.
@@ -86,6 +95,17 @@ receive(msg: Mint) {
 }
 ```
 
-## License
+## Author
+### Nikandr Surkov
+- 🌐 Website: https://nikandr.com
+- 📺 YouTube: https://www.youtube.com/@NikandrSurkov
+- 📢 Telegram Channel: https://t.me/NikandrApps
+- 📱 Telegram: https://t.me/nikandr_s
+- 💻 GitHub: https://github.com/nikandr-surkov
+- 🐦 Twitter: https://x.com/NikandrSurkov
+- 💼 LinkedIn: https://www.linkedin.com/in/nikandr-surkov/
+- ✍️ Medium: https://medium.com/@NikandrSurkov
 
-This project is licensed under the MIT License.
+---
+
+Built with ❤️ for the Telegram developer community
